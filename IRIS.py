@@ -5,10 +5,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 # taking new data into a 2D array format
 print("enter your samples dimensions in the sequence[petal length, petal width, sepal length,sepal width] all in cm:")
-a = ['petal length', 'petal width', 'sepal length', 'sepal width']
+a = [ 'sepal length', 'sepal width','petal length', 'petal width']
 b = []
 for i in a:
-    new = int(input('{}:'.format(i)))
+    new = float(input('{}:'.format(i)))
     b.append(new)
 newdata = np.array(np.array(b).reshape(-1, 1)).reshape(1, -1)
 #training the model to classify between categories
